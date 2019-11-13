@@ -1,5 +1,6 @@
-name: mukesh maharjan
+iname: mukesh maharjan
 college: academia internaional college
 hobby: playing football
 new hobby : photography
-age : 23
+age: 23
+
