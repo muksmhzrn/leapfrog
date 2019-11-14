@@ -1,0 +1,26 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: arial;
+}
+
+.clearfix:before, .clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+
+ul{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+}
+.first-col-2-left-img ul{
+    float: left;
+}
+.first-col-2-left-img ul li a{
+    text-decoration: none;
+}

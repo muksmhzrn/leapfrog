@@ -1,0 +1,45 @@
+.header-top-right ul li{
+    font-size: 14px;
+}
+.header-top-right ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer{
+    
+    color: white;
+}
+.footer-data{
+    font-style: italic;
+}
+.breadcrumb ul li{
+    color: #838d8e;
+    font-size: 14px;
+
+}
+.breadcrumb ul li+li::before{
+    padding: 20px;
+    content: "/\00a0";
+
+}
+.breadcrumb ul li a{
+    text-decoration: none;
+}
+.headding a{
+    text-decoration: none;
+}
+.col2-left-container  ul li a{
+    color: white;
+}
+
+.col3-left-container ul li a{
+    color: white;
+}
+.first-col-2-left-img ul li {
+    float: left;
+}
+.first-col-2-left-name ul li{
+    float: left;
+    padding: 0 75px;
+}
