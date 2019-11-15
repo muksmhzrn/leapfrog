@@ -18,9 +18,10 @@
     padding: 20px 0;
 }
 
-.header-top-right{
+.header-top-right:hover{
     float: right;
     line-height: 80px;
+    cursor: pointer;
    
 }
 .header-top-right ul li{
