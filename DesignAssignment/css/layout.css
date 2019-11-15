@@ -112,13 +112,16 @@
     width: 50%;
 }
 /* jquery */
+.jquery{
+    width: 0 auto;
+}
 .jquery ul {
     float: left;
-    width: auto;
+   
 }
 .jquery ul li{
     float: right;
-    width: auto;
+  
 }
 
 /* footer */
