@@ -51,15 +51,48 @@
 }
 
 /* body */
-.main{
-    background: #F3F3F3;
-    padding: 30px 0;
+
+/* first */
+.first-col{
+    margin: 0 auto;
 }
 .main-heading h1 {
     font-size: 40px;
     color: #E35151;
-    padding: 20px 0;
+    padding: 5px 0;
 }
+.main{
+    background: #F3F3F3;
+    padding: 30px 0;
+}
+.main-paragraph{
+    margin: 0 auto;
+    padding: 5px 0;
+}
+/* 3 colum layout */
+.first-col3-left-container{
+    float: left;
+    width: 25%;
+}
+.first-col3-right-container{
+    float: right;
+    width: 75%;
+}
+.first-col2-left-container{
+    float: left;
+    width: 60%; 
+   
+}
+.first-col2-right-container{
+    float: right;
+    width:30%; 
+}
+/* BLank Div( FOURTH COLUM) */
+.second-col{
+    width: 30%;
+    margin: 0 auto;
+}
+/* third-col */
 .third-main{
     background: #F3F3F3;
     padding: 30px 0;
@@ -74,24 +107,19 @@
 .third-main-paragraph{
     text-align: center;
 }
-.first-col3-left-container{
-    float: left;
+.third-col{
+    margin: 0 auto;
+    width: 50%;
 }
-.first-col3-right-container{
+/* jquery */
+.jquery ul {
     float: left;
+    width: auto;
 }
-.first-col2-left-container{
-    float: left;
-}
-.first-col2-right-container{
+.jquery ul li{
     float: right;
+    width: auto;
 }
-.first-col-2-left-name{
-    float: right;
-    padding: 0 auto;
-    margin: 20px;
-}
-
 
 /* footer */
 
