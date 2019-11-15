@@ -1,5 +1,5 @@
 .main{
-    width: 10 0%;
+    width: 100%;
 }
 .container{
     max-width: 80%;
@@ -69,7 +69,7 @@
     margin: 0 auto;
     padding: 5px 0;
 }
-/* 3 colum layout */
+/* 3 colum layout (2nd ) */
 .first-col3-left-container{
     float: left;
     width: 25%;
@@ -132,7 +132,7 @@
     float: left;
     font-size: 12px;
     line-height: 22PX;
-    width: 24%;
+    width: 34%;
     
 }
 .col4-right-container{
@@ -147,19 +147,13 @@
     float: left;
     font-size: 12px;
     line-height: 22PX;
-    margin: 
-
-    
-    
-
+    width: 30%;
 }
 .col3-right-container{
     float: right;
     font-size: 12px;
     line-height: 22PX;
-    
-    
-
+    width: 70%;
 
 }
 
@@ -167,26 +161,45 @@
     float: left;
     font-size: 12px;
     line-height: 22PX;
-    
-   
+ 
 }
 
 .col2-right-container{
     float: right;
     font-size: 12px;
-    line-height: 22PX;
-    
+    line-height: 22PX  
     
 }
 
+.heading{
+    margin: 0 auto;
+}
 
+.top-img{
+    float: left;
+
+}
+
+.top-table{
+    float: right;
+    
+}
+.bottom-img{
+    float: left;
+    
+}
+
+.bottom-table{
+    float: right;
+  
+}
 .footer-bottom{
     background: #6bb4ad;
 }
 .footer-bottom-left{
     float: left;
-    padding: 0 0;
     line-height: 50px;
+   
    
    
 }
