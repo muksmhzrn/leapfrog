@@ -18,10 +18,21 @@
     padding: 20px 0;
 }
 
-.header-top-right:hover{
+.header-top-right{
     float: right;
+    line-height: 80px;   
+   
+}
+.header-top-right ul li{
+    float: right;
+    line-height: 80px;   
+   
+}
+.header-top-right ul li:hover{
     line-height: 80px;
+    background-color: red;
     cursor: pointer;
+    
    
 }
 .header-top-right ul li{

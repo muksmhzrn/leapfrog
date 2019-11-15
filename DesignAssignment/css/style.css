@@ -36,7 +36,10 @@
 .col3-left-container ul li a{
     color: white;
 }
-
+.first-col-2-left-text p span{
+    color: red;
+    text-decoration-line: underline ;
+}
 .first-col-2-right-img ul li {
     float: left;
     width: 25%;
