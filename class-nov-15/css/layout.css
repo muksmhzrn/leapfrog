@@ -1,0 +1,21 @@
+.main{  
+    text-align: center;
+    background:url("/images/our-team-background.png") repeat-x ;
+}
+.container{
+    padding: 70px;
+
+}
+.col4-left-l{
+    width: 270px;
+
+}
+.col4-left-r{
+    position: absolute;
+    left: 35px;
+    bottom: 21p;
+    color:grey;
+    l
+
+}
+
