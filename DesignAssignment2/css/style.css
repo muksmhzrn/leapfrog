@@ -29,6 +29,20 @@
     text-decoration: none;
 }
 
+/* accordingtitle */
+
+.accordion-title-container{
+   margin-top: 107px
+ }
+ 
+ .accordion-title-container ul li{
+     padding-top: 7px;
+ }
+ 
+ .accordion-title-container ul li:first-child{
+     padding-top: 0px;
+ }
+ 
 /* COl2 */
 .col2 {
    width: 100%;
@@ -261,11 +275,11 @@
 
 .headline-left{
    float: left;
-   width: 80%;
+   width: 20%;
 }
 .headline-right{
    float: right;
-   width: 20%;
+   width: 80%;
 }
 .headline-left h2{
    padding: 10px 5px;
@@ -299,46 +313,74 @@
 }
 .headlinethird-left{
    float: left;
-   width: 80%;
+   width: 60%;
+   padding-right: 20px;
 }
 .headlinethird-right{
-   float: right;
+   float: left;
    width: 20%;
 }
 
 
 /* headlinefourth */
+.headlinefourth{
 
-.headlinefourth-4-left {
-   float: left;
-   width: 20%;
-   line-height: 50px;
 }
-.headlinefourth-4-right{
-   float: right;
-   width: 80%;
-   line-height: 50px;
-}
-.headlinefourth-3-left{
-   float: left;
-   width: 20%;
-   line-height: 50px;
-}
-.headlinefourth-3-right{
-   float: right;
-   width: 80%;
-   line-height: 50px;
-}
-.headlinefourth-2-left{
-   float: left;
-   width: 20%;
-   line-height: 50px;
+.headlinefourth
 
-}.headlinefourth-2-right{
-   float: right;
-   width: 80%;
+.headlinefourth-4-1 {
+   float: left;
+   width: 23%;
+   padding-right: 5px;
+}
+.headlinefirst-1 Paragraph{
+   width: 100%;
+   overflow: hidden;
+}
+.headlinefourth-4-2{
+   float: left;
+   width: 23%;
+   padding-right: 5px;
+}
+
+.headlinefourth-4-3{
+   float: left;
+   width: 20%;
+   padding-right: 5px;
+}
+
+.headlinefourth-4-4{
+   float: left;
+   width: 23%;
+   padding-right: 5px;
+}
+
+
+
+/* .headlinefourth{
+   float: left;
+}
+
+.headlinefourth-4-1 {
+   float: left;
+   width: 25%;
    line-height: 50px;
 }
+.headlinefourth-4-2{
+   float: left;
+   width: 25%;
+   line-height: 50px;
+}
+.headlinefourth-4-3{
+   float: left;
+   width: 25%;
+   line-height: 50px;
+}
+.headlinefourth-4-4{
+   float: left;
+   width: 25%;
+   line-height: 50px;
+} */
 /* TABLE */
 .table{
    width: 100%;

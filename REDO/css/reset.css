@@ -15,9 +15,3 @@ img {
 .clearfix::after {
 	clear: both;
 }
-ul li{
-    list-style: none;
-}
-
-
- 

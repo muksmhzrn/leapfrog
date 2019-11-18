@@ -71,6 +71,8 @@
 /* first */
 .first-col{
     margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom:15px
 }
 
 .main-heading{
@@ -101,6 +103,7 @@
     text-align: center;
     width: 100%;
     line-height: 97px;
+    padding: 15px;
 }
 
 .main-paragraph img {
