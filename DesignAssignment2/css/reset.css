@@ -1,0 +1,23 @@
+*{
+	padding: 0px*;
+	margin: 0px;
+	
+}
+img {
+    width:auto;
+    height: auto; 
+    display: block;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+ul li{
+    list-style: none;
+}
+
+
+ 

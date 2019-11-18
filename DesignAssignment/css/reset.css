@@ -1,0 +1,20 @@
+*{
+	padding: 0px*;
+	margin: 0px;
+	color: #7e807f;
+}
+img {
+    width:auto;
+    height: auto; 
+    display: block;
+}
+.clearfix:before, .clearfix:after {
+	content: "";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
+ul li{
+    list-style: none;
+}

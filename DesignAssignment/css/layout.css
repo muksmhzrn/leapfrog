@@ -1,0 +1,251 @@
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+/* heading */
+.header{
+    
+    background: url("/images/sclaereverse.png") repeat-x #76C7C1 left top;
+}
+
+.header-top-left{
+    float: left;
+    padding: 20px 0;
+}
+
+.header-top-right{
+    float: right;
+    line-height: 80px;   
+   
+}
+.header-top-right ul li{
+    float: right;
+    line-height: 80px;   
+   
+}
+.search-img, .search{
+    float: right;
+    line-height: 80px;   
+    margin-top: 32px;
+   
+}
+.header-top-right ul li:hover{
+    line-height: 80px;
+    background-color: red;
+    cursor: pointer;
+    
+   
+}
+.header-top-right ul li{
+    float: left;
+    padding: 0 20px;
+   
+}
+.header-bottom{
+    background-color: #ECECEC;
+}
+.header-bottom-left{
+    float: left;
+    line-height: 80px;
+}
+
+.breadcrumb{
+    float: right;
+    line-height: 80px;
+}
+.breadcrumb ul li{
+    float: left;
+    font-size: 12px; 
+}
+
+.arrow img{
+    float: left;
+    margin-bottom: 20px;
+}
+
+/* body */
+
+/* first */
+.first-col{
+    margin: 0 auto;
+}
+.main-heading h1 {
+    font-size: 40px;
+    color: red;
+    padding: 5px 0;
+}
+.main{
+    background: #F3F3F3;
+}
+.main-paragraph{
+    margin: 0 auto;
+    padding: 5px 0;
+}
+/* 3 colum layout (2nd ) */
+.first-col3-left-container{
+    float: left;
+    width: 25%;
+}
+.first-col3-right-container{
+    float: right;
+    width: 75%;
+}
+.first-col2-left-container{
+    float: left;
+    width: 60%; 
+   
+}
+.first-col2-right-container{
+    float: right;
+    width:30%; 
+}
+/* BLank Div( FOURTH COLUM) */
+.second-col{
+    width: 30%;
+    margin: 0 auto;
+}
+/* third-col */
+.third-main{
+    background: #F3F3F3;
+    padding: 30px 0;
+}
+.third-main-heading h1 {
+    font-size: 20px;
+    color: #E35151;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.third-main-paragraph{
+    text-align: center;
+}
+.third-col{
+    margin: 0 auto;
+    width: 50%;
+}
+/* jquery */
+.jquery{
+    width: 0 auto;
+}
+.jquery ul {
+    float: left;
+   
+}
+.jquery ul li{
+    float: right;
+  
+}
+
+/* footer */
+
+.footer{
+    background: url("/images/sclaereverse.png") repeat-x #76C7C1 left top;
+}
+
+.col4-left-container{
+    float: left;
+    font-size: 12px;
+    line-height: 22PX;
+    width: 34%;
+    
+}
+.col4-right-container{
+    float: right;
+    font-size: 12px;
+    line-height: 22PX;
+    width: 56%;
+    
+
+}
+.col3-left-container{
+    float: left;
+    font-size: 12px;
+    line-height: 22PX;
+    width: 30%;
+}
+.col3-right-container{
+    float: right;
+    font-size: 12px;
+    line-height: 22PX;
+    width: 70%;
+
+}
+
+.col2-left-container{
+    float: left;
+    font-size: 12px;
+    line-height: 22PX;
+ 
+}
+
+.col2-right-container{
+    float: right;
+    font-size: 12px;
+    line-height: 22PX;
+   
+    
+}    
+
+.heading{
+    margin: 0 auto;
+}
+
+.top-img{
+    float: left;
+
+}
+
+.top-table{
+    float: right;
+    
+}
+.bottom-img{
+    float: left;
+    
+}
+
+.bottom-table{
+    float: right;
+  
+}
+.footer-bottom{
+    background: #6bb4ad;
+}
+.footer-bottom-left{
+    float: left;
+    line-height: 50px;
+   
+   
+   
+}
+.footer-bottom-right{
+    float: right;
+    line-height: 50px;
+}
+.footer-bottom-right ul li{
+    float: left;
+    font-size: 12px;
+    
+}
+.footer-bottom-right ul li a img{
+    padding: 10px;
+    line-height: 30px;
+}
+
+.footer-top{
+    padding: 20px 0;
+}
+.footer-top-col-4-left p{
+    padding: 10px 0;
+}
+.footer-top-col-4-left ul li{
+    padding: 10px 0;
+}
+.footer-top-col-4-right ul li a{
+    text-decoration: none;
+    color: white;   
+}
+

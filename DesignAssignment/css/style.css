@@ -1,0 +1,269 @@
+.header-top-right ul li{
+    font-size: 14px;
+}
+.header-top-right ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer{
+    color: white;
+}
+.footer-data{
+    font-style: italic;
+}
+.breadcrumb ul li{
+    color: #838d8e;
+    font-size: 14px;
+
+}
+.breadcrumb ul li+li::before{
+    padding: 20px;
+    content: "/\00a0";
+
+}
+.breadcrumb ul li a{
+    text-decoration: none;
+}
+.headding a{
+    text-decoration: none;
+}
+
+.col2-left-container  ul li a{
+    color: white;
+}
+
+.col3-left-container ul li a{
+    color: white;
+}
+.first-col-2-left-text p span{
+    color: red;
+    text-decoration-line: underline ;
+}
+.first-col-2-right-img ul li {
+    float: left;
+    width: 25%;
+}
+
+.first-col3-left-container{
+    padding: 5px 0;
+}
+.first-col2-left-container{
+    padding: 5px 0px;
+    
+}
+.first-col2-right-container{
+    padding: 0px 2px;
+   
+}
+
+
+.fourth h1 {
+   text-align: center;
+   text-transform: uppercase;
+   color: #7d8b8b;
+   font-size: 36px;
+   letter-spacing: 2px;
+   line-height: 180px;
+}
+
+.card {
+   width: 270px;
+   height: 335px;
+   position: relative;
+   float: left;
+}
+
+.card:not(:last-of-type) {
+   padding-right: 30px;
+}
+
+.card-image {
+   background: url('../images/image-blank.png') no-repeat center center / cover;
+   width: 270px;
+   height: 310px;
+}
+
+.main ul {
+   list-style: none;
+}
+.card-name {
+   width: 200px;
+   background-color: #99a3a4;
+   text-align: center;
+   color: #fcffff;
+   line-height: 54px;
+   position: absolute;
+   bottom: 0;
+   left: 35px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.card-hover {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 200px;
+   padding: 35px;
+   display: none;
+   background-color: transparent;
+   transition: all 0.3s ease;
+}
+
+.card-hover-image {
+   padding-top: 40px;
+}
+
+.image {
+   float: left;
+   padding-right: 10px;
+}
+
+.card:hover .card-hover {
+   display: block;
+   background-color: #90d1cb;
+}
+
+.card:hover  .card-name {
+   background-color: #e9645b;
+}
+
+.fourth {
+   color: #fcffff;
+   font-style: italic;
+   line-height: 1.7;
+}
+
+/* our-team */
+
+.fourth h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #7d8b8b;
+    font-size: 36px;
+    letter-spacing: 2px;
+    line-height: 180px;
+ }
+ 
+ .card {
+    width: 270px;
+    height: 335px;
+    position: relative;
+    float: left;
+ }
+ 
+ .card:not(:last-of-type) {
+    padding-right: 30px;
+ }
+ 
+ .card-image {
+    background: url('../images/image-blank.png') no-repeat center center / cover;
+    width: 270px;
+    height: 310px;
+ }
+ 
+ .main ul {
+    list-style: none;
+ }
+ .card-name {
+    width: 200px;
+    background-color: #99a3a4;
+    text-align: center;
+    color: #fcffff;
+    line-height: 54px;
+    position: absolute;
+    bottom: 0;
+    left: 35px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+ }
+ 
+ .card-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    padding: 35px;
+    display: none;
+    background-color: transparent;
+    transition: all 0.3s ease;
+ }
+ 
+ .card-hover-image {
+    padding-top: 40px;
+ }
+ 
+ .image {
+    float: left;
+    padding-right: 10px;
+ }
+ 
+ .card:hover .card-hover {
+    display: block;
+    background-color: #90d1cb;
+ }
+ 
+ .card:hover  .card-name {
+    background-color: #e9645b;
+ }
+ 
+ .fourth {
+    color: #fcffff;
+    font-style: italic;
+    line-height: 1.7;
+ }
+ 
+
+ /* seperator */
+ 
+.separator {
+   margin-top: 60px;
+}
+
+.separator-title {
+   margin-top: 10px;
+   float: left;
+   margin-right: 20px;
+}
+
+.separator-image {
+   background-image: url('/images/separator-background.png');
+   background-position: right;
+   background-repeat: repeat-x;
+   width: 900px;
+   margin-top: 16px;
+   float: left;
+   display: inline-block;
+}
+
+
+ .slider {
+   float: right;
+}
+
+ .slider ul li {
+   padding-left: 10px;
+   list-style-type: none;
+   float: left;
+}
+.slider ul li img {
+   background-color: #99a3a4;
+}
+
+ .slider ul li:hover img {
+   cursor: pointer;
+   background-color: #e8504d;
+}
+
+.jquery {
+   margin-top: 40px;
+   margin-bottom: 50px;
+}
+
+.jqueryt ul li{
+   padding-right: 30px;
+   float: left;
+   list-style-type: none;
+}
+

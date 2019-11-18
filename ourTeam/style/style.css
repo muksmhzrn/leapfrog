@@ -1,0 +1,81 @@
+.main {
+   background: url('../images/background.png') repeat-x #f3f3f3 left top;
+   padding-bottom: 100px;
+}
+
+.fourth h1 {
+   text-align: center;
+   text-transform: uppercase;
+   color: #7d8b8b;
+   font-size: 36px;
+   letter-spacing: 2px;
+   line-height: 180px;
+}
+
+.card {
+   width: 270px;
+   height: 335px;
+   position: relative;
+   float: left;
+}
+
+.card:not(:last-of-type) {
+   padding-right: 30px;
+}
+
+.card-image {
+   background: url('../images/image-blank.png') no-repeat center center / cover;
+   width: 270px;
+   height: 310px;
+}
+
+.main ul {
+   list-style: none;
+}
+.card-name {
+   width: 200px;
+   background-color: #99a3a4;
+   text-align: center;
+   color: #fcffff;
+   line-height: 54px;
+   position: absolute;
+   bottom: 0;
+   left: 35px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.card-hover {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 200px;
+   padding: 35px;
+   display: none;
+   background-color: transparent;
+   transition: all 0.3s ease;
+}
+
+.card-hover-image {
+   padding-top: 40px;
+}
+
+.image {
+   float: left;
+   padding-right: 10px;
+}
+
+.card:hover .card-hover {
+   display: block;
+   background-color: #90d1cb;
+}
+
+.card:hover  .card-name {
+   background-color: #e9645b;
+}
+
+.fourth {
+   color: #fcffff;
+   font-style: italic;
+   line-height: 1.7;
+}
