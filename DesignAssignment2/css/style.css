@@ -86,6 +86,10 @@
    list-style-type: none;
    float: left;
 }
+..col2-bottom ul li {
+   list-style-type: none;
+   float: left;
+}
 
 .col2-bottom ul li {
    margin-top: 22px;
@@ -98,7 +102,7 @@
 
 .card {
    padding-top: 30px;
-   width: 23.0179%;
+   width: 22.0179%;
    float: left;
    position: relative;
    margin-right: 2.4722%;
