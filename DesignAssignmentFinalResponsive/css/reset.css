@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img{
+    display: block;
+    width: 100%;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
