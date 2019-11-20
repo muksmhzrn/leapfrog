@@ -1,6 +1,6 @@
 header{
     background-image: url("../images/headerbackground.png");
-    width: 100%;
+   min-width: 1129px;
 }
 .container{
     width: 1129px;
@@ -39,9 +39,14 @@ header{
     width: 513px;
    
 }
+/* .header-bottom-left .heading h2{
+    font-family: 'Raleway', sans-serif;
+} */
 
 .header-bottom-left .heading span{
-    display:block
+    display:block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 .header-bottom-left .heading{
     margin-top: 45px;
@@ -53,6 +58,7 @@ header{
     padding-top: 25px;
     padding-bottom: 20px;;
     color: #77797d;
+    font-family: 'Raleway', sans-serif;
 }
 .header-bottom-left .button input{
     outline: none;
@@ -60,7 +66,8 @@ header{
     background: transparent;
     width: 20%;
     display: block;
-    height: 50px ;   
+    height: 50px ;  
+    cursor: pointer; 
 
 }
 
@@ -103,7 +110,8 @@ header{
     background-color:orange;
     width: 100%;
     display: block;
-    height: 50px      
+    height: 50px;
+    cursor: pointer;    
 
 }
 
@@ -140,7 +148,9 @@ header{
     list-style: none;
     padding-top: 24px;
     padding-bottom: 23px;
+    
 }
+
 .social-media .social-media-icon ul li:not(:last-of-type){
     padding-right: 64px;
    
@@ -216,6 +226,7 @@ header{
     width: 20%;
     display: block;
     height: 50px ;   
+    cursor: pointer;
 
 }
 
@@ -301,12 +312,140 @@ header{
 
 /* 5th */
 .awesome .awesome-container {
-    text-align: center;  
+    text-align: center;
+    width: 414px;
     padding-top: 108px;
+    padding-bottom: 83px;
+    padding-right: 335px;
+    margin-left: 339px;
 }
 .awesome .awesome-container .divider{ 
+    width: 414px;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.awesome .awesome-container p{ 
+   width: 414px;
+}
+
+/* 6th */
+.why-this-awesome .center{
+    text-align: center;
+    width: 355px;
+    float: left;
+}
+.why-this-awesome p{
+    line-height: 26px;
+    padding-bottom: 107px;
+}
+
+.center .heading{ 
+    padding-top: 29px;
+    padding-bottom: 24px;
+    
+}
+
+
+/* 7th */
+.pricing{
+    background-color: #f5f5f5;
+}
+.pricing .pricing-container {
+    text-align: center;
+    width: 414px;
+    padding-top: 108px;
+    padding-bottom: 83px;
+    padding-right: 335px;
+    margin-left: 339px;
+}
+.pricing .pricing-container .divider{ 
+    width: 414px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.pricing .pricing-container p{ 
+   width: 414px;
+}
+
+/* 8th */
+.list-all{
+    width: 342px;
+}
+.list-all .price , .list-all .basic{
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-bottom: 1px solid;
+}
+.list-all .basic{
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+.list-all .price {
+    padding-top: 29px;
+    padding-bottom: 29px;
+}
+.list-all .text-list ul li{
+    list-style: none;
+}
+/* 9th */
+.customer .customer-container {
+    text-align: center;
+    width: 414px;
+    padding-top: 108px;
+    padding-bottom: 83px;
+    padding-right: 335px;
+    margin-left: 339px;
+}
+.customer .customer-container .divider{ 
+    width: 414px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.customer .customer-container p{ 
+   width: 414px;
+}
+
+
+/* 10th */
+.left-container p{
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: #f5f5f5;
+    width: 215px;
+}
+.left-container img{
+    margin-left: 27PX; 
+}
+.customer-paragraph .left-container{
+    float: left;
+    width: 215px;
+    margin-right: 112px;
+}
+.customer-paragraph .left-container:not(:last-of-type){
+    margin-left: 0px;
+}
+
+
+/* 11th */
+.customer-container-image{
+    width: 275px;
+}
+.customer-container-image .image{
+    float: left;
+    width: 82px;
+}
+.customer-container-image .name{
+    float: left;
+    width: 100px;
+}
+
+.customer-container-image{
+    float: left;
+    width: 275px;
+    margin-right: 64px;  
 }
 
 /* 2ndlast */
@@ -315,6 +454,8 @@ header{
     padding-top: 76px;
     padding-bottom: 63px;
     text-align: center;
+    margin-top: 96px;
+    
 }
 .stylish .stylish-container p{
    width: 538px;
@@ -333,7 +474,7 @@ header{
 .stylish p{
     width: 513px;
     padding-top: 25px;
-    padding-bottom: 20px;;
+    padding-bottom: 20px;
     color: #77797d;
 }
 .stylish .button{
@@ -347,12 +488,15 @@ header{
     width: 20%;
     display: block;
     height: 50px ;   
+    cursor: pointer;
 
 }
 /* LAST */
 .contact-us .contact-us-container {
     text-align: center;  
     padding-top: 108px;
+    width: 414px;   
+    margin-left: 339px;
 }
 .contact-us .contact-us-container .divider{ 
     padding-top: 30px;
@@ -363,8 +507,7 @@ header{
 
 .contact-us-form .main-form .form{
     background-color: #fff;
-    padding-bottom: 236px;
-   
+    padding-bottom: 43px;
 }
 .contact-us-form .main-form .form input{
     display: block;
@@ -373,6 +516,7 @@ header{
     padding-top: 42px;
     padding-bottom: 10px;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .contact-us-form .main-form .form-left{
@@ -392,6 +536,7 @@ header{
 }
 .contact-us-form .main-form .form-right input{
     width: 526px;
+    padding-bottom: 144px;
 
 }
 
@@ -407,6 +552,5 @@ header{
     display: block;
     height: 50px ;
     width: 147px;    
-    
-
+    cursor: pointer;
 }
