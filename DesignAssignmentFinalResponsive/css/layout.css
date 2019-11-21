@@ -551,10 +551,6 @@ customer {
     width: 17.9167%;
     /* margin-right: 112px; */
 }
-.customer-paragraph .left-container:not(:last-of-type){
-    /* margin-left: 0px; */
-}
-
 
 /* 11th */
 .customer-container-image{
@@ -703,6 +699,7 @@ customer {
 }
 
 /* footer */
+.
 .footer-container{
     width: 100%;
 }
@@ -710,16 +707,18 @@ customer {
     background-color:black;
     color: white;
     text-align: center;
+   
 }
 
 .footer .footer-container .social-media-icon ul{
-    margin-left: 380px;
+   
     margin-top: 80px;
+    width: 100%;
 }
 
 .footer .footer-container .social-media-icon ul li{
     list-style: none;
-    padding-right: 25px;
+    
     margin-top: 21px;
     
     float: left;
