@@ -1,1 +1,11 @@
-@media
+@media sceen and (min-width: 600px) {
+  
+  
+    
+  }
+
+  @media tab and (min-width: 800) {
+  
+   
+    
+  }
