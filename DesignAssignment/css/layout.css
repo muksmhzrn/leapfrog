@@ -345,20 +345,29 @@ div.jquery .image:not(:last-of-type){
 .footer-top-wraper-right-2-1{
     width: 330px;
 }
-
 .footer-bottom{
     background-color: #6bb4ad;
+    padding-top: 13px;
+    padding-bottom: 13px;
 }
-.footer-bottom .footer-bottom-left{
+    
+
+.footer-bottom .footer-bottom-left h4{
     float: left;
-    width: 119px;
-}
-.footer-bottom .footer-bottom-right{
+} 
+.footer-bottom .footer-bottom-left ul{
     float: right;
-}
-.footer-bottom .footer-bottom-right .footer-bootom-right-image{
+} 
+.footer-bottom .footer-bottom-left ul li{
+    float: left;
+} 
+
+/* }
+
+} */
+/* .footer-bottom .footer-bottom-right .footer-bootom-right-image{
     float: right;
 }
 .footer-bottom .footer-bottom-right .footer-bootom-right-image ul li{
     float: left;
-}
+} */
