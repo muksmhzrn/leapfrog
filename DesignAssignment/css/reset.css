@@ -1,13 +1,9 @@
 *{
-	padding: 0px*;
+	padding: 0px;
 	margin: 0px;
 	color: #7e807f;
 }
-img {
-    width:auto;
-    height: auto; 
-    display: block;
-}
+
 .clearfix:before, .clearfix:after {
 	content: "";
 	display: table;
@@ -17,4 +13,7 @@ img {
 }
 ul li{
     list-style: none;
+}
+body{
+	background-color: #f3f3f3;
 }

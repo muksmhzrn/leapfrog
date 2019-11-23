@@ -1,13 +1,14 @@
 header{
-    background-image: url("../images/headerbackground.png");
-   min-width: 1129px;
+    background-image: url("../images/headerbackground.png") ;
+    background-repeat: no-repeat;
+    /* min-width: 1129px; */
 }
 .container{
-    width: 1197px;
+    width: 1200px;
     margin: 0 auto;
 }
 .header-top{
-    background-color: black;
+    background-color: #000;
     padding-top: 26px;
     padding-bottom: 16px;
     color: #b0b0b0;
@@ -20,8 +21,9 @@ header{
     float: right;
 }
 .header-top .navbar ul li{
-    float: left;
+    /* float: left; */
     list-style: none;
+    display: inline-block;
 
 }
 .header-top .navbar ul li:not(:last-of-type){
@@ -30,8 +32,9 @@ header{
 
 /* headerbottom */
 .header-bottom{
-    margin-top: 50px;
-    padding-bottom: 54px;
+    /* margin-top: 50px; */
+    padding-top: 112px;
+    padding-bottom: 139px;
    
 }
 .header-bottom-left {
@@ -143,14 +146,16 @@ header{
 }
 
 .social-media .social-media-icon{
-    float: right;
+    float: left;
   
 }
 .social-media .social-media-icon ul li{
-    float: left;
+    /* float: left; */
+    display: inline-block;
+    vertical-align: middle;
     list-style: none;
-    padding-top: 24px;
-    padding-bottom: 23px;
+    padding-top: 43px;
+    /* padding-bottom: 23px; */
     
 }
 
@@ -178,14 +183,17 @@ header{
     padding-top: 48px;
     padding-bottom: 48px;
     font-family: 'Raleway', sans-serif;
+    width: 112px;
+    background-color:black;
    
 }
 
 .transition .tabs .tab1 a{
     text-decoration: none;
-    background-color:black;
+    /* background-color:black; */
     color: #ffffff;
     padding: 48px 39px 48px 39px;
+    width: 112px;
    
 }
 .transition .tabs .tab1 a:hover{
@@ -225,7 +233,7 @@ header{
     font-family: 'Open Sans', sans-serif;
 }
 .main-block-left .button input{
-    margin-top: 26px;
+    /* margin-top: 51px; */
     outline: none;
     color: #fff2e9; 
     background: orange;
@@ -344,7 +352,10 @@ header{
     text-align: center;
     width: 355px;
     float: left;
+    margin-right: 45px;
+    /* margin: 0, 22.5px; */
 }
+
 .why-this-awesome p{
     line-height: 26px;
     padding-bottom: 107px;
@@ -389,7 +400,8 @@ header{
 .list-all{
     float: left;
     width: 302px;
-    margin-right: 40px;
+    /* margin-right: 40px; */
+    margin-right: 98px;
 }
 
 .list-all:not(:last-of-type){
@@ -405,10 +417,14 @@ header{
     padding-top: 22px;
     padding-bottom: 22px;
 }
-.list-all .price h1{
+.list-all  .price h3{
     padding-top: 29px;
     padding-bottom: 29px;
     font-family: 'Raleway', sans-serif;
+}
+.list-all  .price h3 span{
+  font-size: 50px;  
+  font-family: 'Raleway', sans-serif;
 }
 .list-all .hover-text h3{
     font-family: 'Raleway', sans-serif;
@@ -474,7 +490,6 @@ header{
     padding-top: 14px;
     padding-bottom: 14px;
     background-color: #f5f5f5;
-    width: 215px;
     font-family: 'Open Sans', sans-serif;
 }
 .left-container img{
@@ -482,34 +497,39 @@ header{
 }
 .customer-paragraph .left-container{
     float: left;
-    width: 215px;
-    margin-right: 112px;
+    width: 275px;
+    margin-right: 125px;
 }
-.customer-paragraph .left-container:not(:last-of-type){
+/* .customer-paragraph .left-container:not(:last-of-type){
     margin-left: 0px;
-}
+} */
 
 
 /* 11th */
 .customer-container-image{
     width: 275px;
+  
 }
 .customer-container-image .image{
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
     width: 82px;
 }
 .customer-container-image .name{
-    float: left;
+
     width: 100px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .customer-container-image{
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
     width: 275px;
-    margin-right: 64px;  
+    margin-right: 120px;  
 }
 
-/* 2ndlast */
+/* 12th */
 .stylish{
     background-image: url("../images/u25_state0.png");
     padding-top: 76px;
@@ -519,9 +539,9 @@ header{
     
 }
 .stylish .stylish-container p{
-   width: 538px;
+   width: 736px;
    text-align: center;
-   padding-left: 325px;
+   margin: 0 auto;
    font-family: 'Open Sans', sans-serif;
 }
 
@@ -542,20 +562,22 @@ header{
     font-family: 'Open Sans', sans-serif;
 }
 .stylish .button{
-    padding-left: 503px;
+    width: 135px;
+    margin: 0 auto;
+    text-align: center;
     
 }
 .stylish .button input{
     outline: none;
     color: #fff2e9; 
     background: transparent;
-    width: 20%;
+    width: 100%;
     display: block;
     height: 50px ;   
     cursor: pointer;
 
 }
-/* LAST */
+/* 13th */
 .contact-us .contact-us-container {
     text-align: center;  
     padding-top: 108px;
@@ -566,9 +588,6 @@ header{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-
-
-
 .contact-us-form .main-form .form{
     background-color: #fff;
     padding-bottom: 43px;
@@ -581,6 +600,7 @@ header{
     padding-bottom: 10px;
     margin: 0 auto;
     cursor: pointer;
+   
 }
 
 .contact-us-form .main-form .form-left{
@@ -617,6 +637,7 @@ header{
     height: 50px ;
     width: 147px;    
     cursor: pointer;
+    border: 0px;
 }
 
 /* footer */
@@ -625,23 +646,26 @@ header{
     background-color:black;
     color: white;
     text-align: center;
+    margin-top: 21px;
+    
 }
 
 .footer .social-media-icon ul{
-    margin-left: 380px;
-    margin-top: 80px;
+   padding: 23px 0;
 }
-
 .footer .social-media-icon ul li{
+    margin: 0 12px;
+    display: inline-block;
+    vertical-align: middle;
     list-style: none;
-    padding-right: 25px;
-    margin-top: 21px;
-    
-    float: left;
+
 }
  .date{
-    margin-top: 15px;
-    padding-bottom: 15px;
+     display: inline-block;
+     vertical-align: middle;
+     padding-bottom: 15px; 
+    /* margin-top: 15px;
+    padding-bottom: 15px; */
     font-family: 'Raleway', sans-serif;
 }
 

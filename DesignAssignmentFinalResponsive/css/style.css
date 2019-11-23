@@ -1,11 +1,294 @@
-@media sceen and (min-width: 600px) {
-  
-  
-    
-  }
+@media only screen and (max-width: 769px){
+    .container {
+		width: auto;
+		margin: 0 4%;
+    }
+    .header-top .navbar  {
+        display: none;
+    }
 
-  @media tab and (min-width: 800) {
-  
-   
+    .header-bottom-left {
+        float: left;
+        width: 30%;
+    }
+    .header-bottom-left p ,.header-bottom-left .divider{
+        display: none;
+    }
+    .header-bottom-left .button input{
+        width: 35%;
+    }
+    .header-bottom-right{
+        float: left;
+        padding-left: 20%;
+    }
+
+    .social-media .heading ,.social-media .heading p {
+        line-height: 30px;
+        width: 100%;
+        font-family: 'Open Sans', sans-serif;
+    }
     
-  }
+    .social-media .social-media-icon ul li {
+            
+        display: inline-block;
+        vertical-align: middle;
+        list-style: none;
+        padding-bottom: 23px;
+        padding-top: 0px;
+        
+    }
+    .transition {
+     
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .transition .tabs {
+        float: none;
+        width: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .transition .tabs .tab1 {
+        
+        font-family: 'Raleway', sans-serif;
+        width: auto;
+        background-color: black;
+        display: inline-block;
+        
+    }
+    .main-block-left {
+        float: left;
+        width: 40%;
+        margin-right: 10%;
+    }
+    .main-block-right {
+        float: left;
+        width: 40%;
+    }
+    .main-block-left p {
+        display: block;
+        width: 100%;
+        padding-bottom: 56px;
+        color: #77797d;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+.sub-list-section p {
+    width: auto;
+}
+
+.main-block-left .button input {
+    width: 145px;
+}
+
+    .sub-list {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: 10px;
+    }
+    .sublist-image {
+        width: 40%;
+        margin-right: 10px;
+        
+    }
+    .sub-list-section {
+        float: right;
+        width: 50%;
+    }
+    .sub-list-section-title .sub-list-section-title-paragraph {
+        width: 80%;
+    }
+    .divider {
+        width: 50px;
+        margin: 0 auto;
+    }
+    /* .sub-list-section-title{
+
+    } */
+ 
+    .stander-picture-section {
+        float: left;
+        width: 40%;
+        margin-right: 5%;
+    }
+    
+    .standard-picture-section-image {
+        width: 40%;
+        float: left;
+    }
+    .stander-picture p {
+        padding-bottom: 32px;
+        width: auto;
+        
+    }
+
+    .awesome .awesome-container {
+        width: 100%;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        margin-left: 0px;
+        
+    }
+    .awesome .awesome-container .divider {
+        
+        width: 100px;
+        margin: 0 auto;
+    }
+    .why-this-awesome .center {
+        text-align: center;
+        width: 30%;
+        float: left;
+        margin-right: 5px;
+    }
+    .awesome .awesome-container p {
+         width: auto;
+    }
+    .pricing .pricing-container {
+        width: 100%;
+        padding-right: 0;
+        margin-left: 0;
+    }
+    .pricing .pricing-container p {
+        width: auto;
+    
+    }
+    .pricing .pricing-container p {
+    width: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.list-all {
+   
+    width: 30.33%;
+    margin-right: 3%;
+}
+.customer .customer-container {
+    width: 100%;
+    padding-right: 0;
+    margin-left: 0;
+}
+.customer .customer-container p {
+    width: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.customer-paragraph .left-container {
+    float: left;
+    width: 30.33%;
+    margin-right: 3%;
+}
+.customer-container-image {
+    display: inline-block;
+    vertical-align: middle;
+    width: 29.5%;
+    margin-right: 3%;
+}
+.stylish .stylish-container p {
+    width:  auto;
+}
+.contact-us .contact-us-container {
+    text-align: center;
+    padding-top: 108px;
+    width: 100%;
+    margin-left: 0;
+}
+.contact-us-form .main-form .form-left , 
+.contact-us-form .main-form .form-right {
+    float: left;
+    width: 50%;
+    
+}
+.contact-us-form .main-form .form-left input , 
+.contact-us-form .main-form .form-right input  {
+    width: 50%;
+}
+
+.contact-us .button input {
+    margin: 0 auto;
+}
+.contact-us .button{
+    padding-left: 0px;
+}
+
+}
+
+@media only screen and (max-width: 361px){
+    .header-bottom-left {
+        float: left;
+        width: 100%;
+    }
+    .header-bottom-right {
+        display: none;
+    }
+    .social-media .social-media-icon ul li {
+        width: 10%;
+    }
+    .social-media .social-media-icon ul li:not(:last-of-type) {
+        padding-right: 10px;
+    }
+    .transition .tabs .tab1 {
+        width: 30%;
+        margin-right: 3%;
+    }
+
+    .transition .tabs .tab1 a {
+        padding: 22px 22px;
+        width: auto;
+    }
+
+    .transition .tabs .tab1 {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+    .main-block-left {
+        width: 100%;
+        margin-right: 10px;
+    }
+    .main-block-right {
+        float: none;
+        width: 43%;
+       
+    }
+    .sublist-image {
+        width: 100%;
+        margin-right: 0;
+    }
+    .sub-list-section {
+        float: none;
+        width: 100%;
+    }
+    .stander-picture-section {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+    .standard-picture-section-image {
+        width: 100%;
+        float: left;
+    }
+    .why-this-awesome .center {
+        text-align: center;
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .list-all {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .customer-paragraph .left-container {
+        float: left;
+        width: 100%;
+        margin-right: 0;
+    }
+    .customer-container-image {
+        display: block;
+        width: 100;
+        margin-right: 0;
+    }
+
+    .footer .social-media-icon ul li {
+        margin: 0x;
+    }
+}
