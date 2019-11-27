@@ -243,15 +243,15 @@
 // // output should be [2, 4, 6, 8]
 
 
-// function task4(){
-//     var number = [1,2,3,4,5]   
+// function task4() {
+//     var number = [1, 2, 3, 4, 5]
 //     // var newarray = number.map(function(value){
 //     //     return value*2;
 //     // })
 
 //     var newarray = [];
-//     number.forEach(function(val) {
-//         newarray.push(val*2);
+//     number.forEach(function (val) {
+//         newarray.push(val * 2);
 //     })
 
 //     console.log(newarray);
@@ -290,39 +290,95 @@
 //         name: 'Andrew',
 //     }];
 
-function solution5() {
-    var arr = [{
-        id: 1,
-        name: 'John',
-    }, {
-        id: 2,
-        name: 'Mary',
-    }, {
-        id: 3,
-        name: 'Andrew',
-    }];
+// function solution5() {
+//     var arr = [{
+//         id: 1,
+//         name: 'John',
+//     }, {
+//         id: 2,
+//         name: 'Mary',
+//     }, {
+//         id: 3,
+//         name: 'Andrew',
+//     }];
 
-    function sortBy(array, key) {
-        return array.slice(0).sort(function (a, b) {
-            if (a[key] < b[key]) {
-                return -1;
-            }
-            if (a[key] > b[key]) {
-                console.log(1)
-                return 1;
-            }
-            return 0;
-        });
-    }
-var sorted = sortBy(arr, 'name');
-console.log("Sorted Array", sorted);
-console.log("Old Array", arr)
-}
-solution5();
+//     function sortBy(array, key) {
+//         return array.slice(0).sort(function (a, b) {
+//             if (a[key] < b[key]) {
+//                 return -1;
+//             }
+//             if (a[key] > b[key]) {
+//                 console.log(1)
+//                 return 1;
+//             }
+//             return 0;
+//         });
+//     }
+//     var sorted = sortBy(arr, 'name');
+//     console.log("Sorted Array", sorted);
+//     console.log("Old Array", arr)
+// }
+// solution5();
 
 
 
 // Normalization
 
+var input = {
+    '1': {
+        id: 1,
+        name: 'John',
+        children: [
+            { id: 2, name: 'Sally' },
+            { id: 3, name: 'Mark', children: [{ id: 4, name: 'Harry' }] }
+        ]
+    },
+    '5': {
+        id: 5,
+        name: 'Mike',
+        children: [{ id: 6, name: 'Peter' }]
+    },
+    '7': {
+        id: 7,
+        name: 'Samantha',
+        children: [
+            { id: 8, name: 'Kylie' },
+            { id: 9, name: 'Walter' }
+        ]
+    }
+};
+
+var result = {};
+var index = 0;
+//   var childList = [];
+
+function normalization(obj) {
+    Object.keys(obj).forEach(function (el) {
+        normalizeObj(input[el]);
+    });
+}
+
+function normalizeObj({ id, name, children = null }) {
+    console.log(id, name);
+    ++index;
+    var childList = [];
+    if (children) {
+        children.forEach(function (el) {
+            childList.push(el.id);
+        })
+        result[index] = { id: index, name: name, children: childList };
+        children.forEach(function (el) {
+            normalizeObj(el);
+        })
+
+    }
+    else {
+        result[index] = { id: index, name: name };
+    }
+
+}
+
+normalization(input);
+console.log(result);
 
 
