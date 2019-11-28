@@ -8,6 +8,7 @@
     this.height = 20;
     this.element = null;
 
+
     this.parentElement = parentElement;
     var that = this;
     console.log('box', Box);
@@ -26,9 +27,8 @@
     }
 
     this.setPostion = function (x, y) {
-      this.x = x
-      this.y = y;
-      console.log(x);
+      this.x = x - this.width;
+      this.y = y - this.height;
     }
 
     this.boxClicked = function () {
@@ -36,7 +36,6 @@
     }
 
     this.draw = function () {
-
       this.element.style.left = this.x + 'px';
       this.element.style.top = this.y + 'px';
     }
@@ -85,9 +84,7 @@
   // }
 
   function getRandomArbitrary(min, max) {
-    // console.log('return', Math.random() * ((max - min) + min));
-    return Math.random() * ((max - min) + min);
-    // return 1;
+    return Math.random() * (max - min) + min;
   }
 
   function Game(parentElement, boxCount) {
@@ -104,8 +101,8 @@
       for (var i = 0; i < this.boxCount; i++) {
         var box = new Box(parentElement).init();
         box.setPostion(
-          getRandomArbitrary(0, MAX_WIDTH - 20),
-          getRandomArbitrary(0, MAX_HEIGHT - 20)
+          getRandomArbitrary(0, MAX_WIDTH),
+          getRandomArbitrary(0, MAX_HEIGHT)
         )
         box.draw();
         boxes.push(box);
