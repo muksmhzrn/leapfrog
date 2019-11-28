@@ -4,8 +4,8 @@
     this.y = 10;
     this.dx = 5;
     this.dy = 5;
-    this.width = 20;
-    this.height = 20;
+    this.width = 50;
+    this.height = 50;
     this.element = null;
 
 
@@ -17,25 +17,30 @@
       var box = document.createElement('div');
       box.style.height = this.height + 'px';
       box.style.width = this.width + 'px';
+      // box.style.backgroundImage = "url('antwalk.gif')";
       box.classList.add('box');
       this.parentElement.appendChild(box);
       this.element = box;
-      this.element.onclick = this.boxClicked.bind(this);
+      this.element.onclick = this.boxClicked;
       this.draw();
 
       return this;
     }
 
     this.setPostion = function (x, y) {
-      this.x = x - this.width;
-      this.y = y - this.height;
+      this.x = x
+      this.y = y;
+      console.log(x);
     }
 
     this.boxClicked = function () {
+      console.log(this.parentNode)
+      this.parentNode.removeChild(this);
       console.log('boxClicked', this.width);
     }
 
     this.draw = function () {
+
       this.element.style.left = this.x + 'px';
       this.element.style.top = this.y + 'px';
     }
@@ -45,7 +50,7 @@
       this.y += this.dy;
       // console.log('x0', this.x);
       this.draw();
-      console.log('draw0', this.draw);
+      // console.log('draw0', this.draw);
     }
 
 
@@ -58,7 +63,7 @@
       }
       var boxLength = boxes.length;
 
-      console.log('boxlength', boxLength);
+      // console.log('boxlength', boxLength);
 
 
 
@@ -84,7 +89,9 @@
   // }
 
   function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
+    // console.log('return', Math.random() * ((max - min) + min));
+    return Math.random() * ((max - min) + min);
+    // return 1;
   }
 
   function Game(parentElement, boxCount) {
@@ -101,15 +108,15 @@
       for (var i = 0; i < this.boxCount; i++) {
         var box = new Box(parentElement).init();
         box.setPostion(
-          getRandomArbitrary(0, MAX_WIDTH),
-          getRandomArbitrary(0, MAX_HEIGHT)
+          getRandomArbitrary(0, MAX_WIDTH - 50),
+          getRandomArbitrary(0, MAX_HEIGHT - 50)
         )
         box.draw();
         boxes.push(box);
       }
-      console.log('boxesssss', boxes[0]);
-      console.log('boxesssss', boxes[1]);
-      console.log('boxesssss', boxes[2]);
+      // console.log('boxesssss', boxes[0]);
+      // console.log('boxesssss', boxes[1]);
+      // console.log('boxesssss', boxes[2]);
 
 
       setInterval(this.moveBoxes.bind(this), 100)
