@@ -21,12 +21,11 @@
       this.element = box;
       this.element.onclick = this.boxClicked.bind(this);
       this.draw();
-
       return this;
     }
 
     this.setPostion = function (x, y) {
-      this.x = x
+      this.x = x;
       this.y = y;
       console.log(x);
     }
@@ -53,13 +52,15 @@
     this.checkCollision = function (boxes) {
       if (this.x < 0 || this.x + this.width > 500) {
         this.dx = -this.dx;
+        this.x = this.x <= 0 ? 0 : MAX_WIDTH - this.width;
       }
       if (this.y < 0 || this.y + this.height > 500) {
         this.dy = -this.dy;
+        this.y = this.y <= 0 ? 0 : MAX_HEIGHT - this.height;
       }
-      var boxLength = boxes.length;
+      // var boxLength = boxes.length;
 
-      console.log('boxlength', boxLength);
+      // console.log('boxlength', boxLength);
 
 
 
@@ -85,9 +86,7 @@
   // }
 
   function getRandomArbitrary(min, max) {
-    // console.log('return', Math.random() * ((max - min) + min));
     return Math.random() * ((max - min) + min);
-    // return 1;
   }
 
   function Game(parentElement, boxCount) {
