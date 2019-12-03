@@ -33,4 +33,27 @@ position: relative;
   margin-left: 50px;
   padding: 5PX;
   border: 2PX solid black;
+  display: none;
+}
+.highscore {
+  position: absolute;
+  top:60PX;
+  font-weight: 700;
+  font-size: 25px;
+  margin-left: 50px;
+  padding: 5PX;
+  border: 2PX solid black;
+  display: none;
+}
+
+/* #resetbutton{
+  position: absolute;
+  float: right;
+} */
+
+.player{
+  background-image: url("./images/player11.png");
+}
+.obstacle{
+  background-image: url("./images/enemy1.png");
 }
