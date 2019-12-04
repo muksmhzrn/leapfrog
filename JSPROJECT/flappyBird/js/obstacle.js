@@ -1,5 +1,5 @@
 function Obstacle(parentElement) {
-  this.x = WINDOW_WIDTH;
+  this.x = WINDOW_WIDTH / 2;
   this.y = 0;
   this.width = 80;
   this.mainElement = parentElement;
@@ -42,11 +42,13 @@ function Obstacle(parentElement) {
     this.x -= 5;
     this.pipeBottom.style.left = this.x + 'px';
     this.pipeTop.style.left = this.x + 'px';
+
   }
 
   this.removeObstacle = function () {
     this.mainElement.removeChild(this.pipeTop);
     this.mainElement.removeChild(this.pipeBottom);
+
   }
 
 }

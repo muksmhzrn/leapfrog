@@ -29,11 +29,13 @@ function Bird(parentElement) {
   };
 
   this.gravity = function () {
+
     let tempTime = this.time;
     this.iVelocity = this.fVelocity;
     this.fVelocity = this.iVelocity + GRAVITY * this.time;
     this.time = this.time + (40 / 1000);
     this.dx = this.fVelocity * (this.time - tempTime) + GRAVITY * (this.time + tempTime);
+
 
   };
 

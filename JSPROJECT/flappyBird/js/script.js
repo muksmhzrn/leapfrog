@@ -11,6 +11,11 @@ var KEY_CODES = {
 var countScore = 0;
 var moveWorld;
 var gameArray = [];
+var die = new Audio();
+die.src = '/audio/sfx_die.wav';
+
+
+
 
 function getRandom(upper, lower) {
   return Math.floor(Math.random() * (upper)) + lower;
@@ -19,10 +24,21 @@ function getRandom(upper, lower) {
 //initial
 
 function start() {
-  var newWorld = new World();
+  var newWorld = new World('mainWrapper');
 
   newWorld.createWorld();
   gameArray.push(newWorld);
 }
 
 start();
+
+//next
+
+function start2() {
+  var newWorld = new World('secondWrapper');
+
+  newWorld.createWorld();
+  gameArray.push(newWorld);
+}
+
+start2();

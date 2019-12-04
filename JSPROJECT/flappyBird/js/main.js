@@ -1,16 +1,19 @@
-function World() {
-  this.mainWrapper = document.getElementById('mainWrapper');
+
+
+function World(ID) {
+  this.mainWrapper = document.getElementById(ID);
   this.score = 0;
   this.counter = 0;
   this.obstacle = '';
   this.obstacles = [];
   this.bird = new Bird(this.mainWrapper);
   this.background = new Background(this.mainWrapper);
+  // this.hScore = window.localStorage.getItem('highScore');
 
   this.createWorld = function () {
-    this.mainWrapper.style.height = '380px';
+    this.mainWrapper.style.height = '450px';
     this.mainWrapper.style.width = '50%';
-    this.mainWrapper.style.margin = '0 auto';
+    // this.mainWrapper.style.margin = '0 auto';
     this.mainWrapper.style.position = 'relative';
 
 
@@ -24,7 +27,7 @@ function World() {
     startButton.style.display = 'block';
     startButton.style.margin = '0px auto';
 
-    startHeading.appendChild(document.createTextNode('Press Space to move Flappy Up'));
+    startHeading.appendChild(document.createTextNode('Press keyUP to move Flappy Up'));
     startButton.appendChild(document.createTextNode('Play'));
 
     startButton.onclick = (event) => {
@@ -40,11 +43,13 @@ function World() {
 
 
 
+
     //movement 
     moveWorld = setInterval(() => {
       var result;
 
-
+      window.localStorage.setItem('highScore', this.score);
+      this.hScore = window.localStorage.getItem('highScore', this.score);
       this.background.updateBackground();
       result = this.bird.updateBird();
 
@@ -57,11 +62,15 @@ function World() {
         var birdDirection = 0;
 
 
-        if (event.keyCode === 32) {
+        if (event.keyCode === 38) {
           //up
           if (this.bird.alive === 1) {
             birdDirection = 1;
             this.bird.moveBird(birdDirection);
+            var flap = new Audio();
+            flap.src = '/audio/sfx_flap.wav';
+            flap.play();
+            console.log('ddsds');
           }
         }
       }
@@ -94,7 +103,7 @@ function World() {
     var scoreHeading = document.createElement('h2');
     var highScoreHeading = document.createElement('h2');
     var restartButton = document.createElement('button');
-    var hScore = 0;
+    var hScore = window.localStorage.getItem('highScore');
 
     endHeading.style.lineHeight = '0';
     endHeading.style.textAlign = 'center';
@@ -123,7 +132,7 @@ function World() {
     scoreHeading.style.left = '5px';
     scoreHeading.style.top = '10px';
 
-    console.log('hScore111', this.hScore);
+    // console.log('hScore111', this.hScore);
     endHeading.appendChild(document.createTextNode('Game Over'));
     scoreHeading.appendChild(document.createTextNode('Score: ' + this.score));
     highScoreHeading.appendChild(document.createTextNode('High Score: ' + this.hScore));
@@ -150,22 +159,29 @@ function World() {
       if (this.bird.x <= obstacle.x + obstacle.width &&
         this.bird.x + this.bird.width >= obstacle.x) {
         countScore++;
+
         //everytime bird passes obstacle, the condition accepted 26 times
         if (countScore % 26 === 0) {
           this.score++;
+          var point = new Audio();
+          point.src = '/audio/sfx_point.wav';
+          point.play();
 
         }
 
 
         if (this.bird.y <= obstacle.y + obstacle.heightTop ||
           this.bird.y + this.bird.height - 30 >= WORLD_HEIGHT - (obstacle.y + obstacle.heightBottom)) {
+          var hit = new Audio();
+          hit.src = '/audio/sfx_hit.wav';
+          hit.play();
           // this.bird.style.transform = rotate(180deg);
           clearInterval(moveWorld);
           this.resetWorld();
           this.bird.alive = 0;
-          window.localStorage.setItem('highScore', this.score);
-          var hScore = window.localStorage.getItem('highScore', this.score);
-          console.log('hScore', hScore);
+
+
+          console.log('hScore', this.hScore);
         }
       }
 
