@@ -242,7 +242,7 @@ function Background(parentElement) {
   };
 
   this.update = function () {
-    this.backgroundY += 50;
+    this.backgroundY += 10;
     this.frame.style.backgroundPositionY = this.backgroundY + 'px';
 
   };
