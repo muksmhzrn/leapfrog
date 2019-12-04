@@ -1,6 +1,7 @@
 
 
-function World(ID) {
+function World(ID, keycode) {
+  this.keycode = keycode;
   this.mainWrapper = document.getElementById(ID);
   this.score = 0;
   this.counter = 0;
@@ -62,7 +63,7 @@ function World(ID) {
         var birdDirection = 0;
 
 
-        if (event.keyCode === 38) {
+        if (event.keyCode === this.keycode) {
           //up
           if (this.bird.alive === 1) {
             birdDirection = 1;

@@ -24,7 +24,7 @@ function getRandom(upper, lower) {
 //initial
 
 function start() {
-  var newWorld = new World('mainWrapper');
+  var newWorld = new World('mainWrapper', 32);
 
   newWorld.createWorld();
   gameArray.push(newWorld);
@@ -35,10 +35,11 @@ start();
 //next
 
 function start2() {
-  var newWorld = new World('secondWrapper');
+  var newWorld = new World('secondWrapper', 38);
 
   newWorld.createWorld();
   gameArray.push(newWorld);
+
 }
 
 start2();
