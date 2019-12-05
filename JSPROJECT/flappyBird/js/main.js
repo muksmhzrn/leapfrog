@@ -1,6 +1,7 @@
 
 
-function World(ID, keycode) {
+function World(ID, keyHeading, keycode) {
+  this.keyHeading = keyHeading
   this.keycode = keycode;
   this.mainWrapper = document.getElementById(ID);
   this.score = 0;
@@ -28,7 +29,7 @@ function World(ID, keycode) {
     startButton.style.display = 'block';
     startButton.style.margin = '0px auto';
 
-    startHeading.appendChild(document.createTextNode('Press keyUP to move Flappy Up'));
+    startHeading.appendChild(document.createTextNode(keyHeading));
     startButton.appendChild(document.createTextNode('Play'));
 
     startButton.onclick = (event) => {

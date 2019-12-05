@@ -24,7 +24,7 @@ function getRandom(upper, lower) {
 //initial
 
 function start() {
-  var newWorld = new World('mainWrapper', 32);
+  var newWorld = new World('mainWrapper', 'Press space to move Flappy Up', 32);
 
   newWorld.createWorld();
   gameArray.push(newWorld);
@@ -34,8 +34,11 @@ start();
 
 //next
 
+
+
+
 function start2() {
-  var newWorld = new World('secondWrapper', 38);
+  var newWorld = new World('secondWrapper', 'Press keyUP to move Flappy Up', 38);
 
   newWorld.createWorld();
   gameArray.push(newWorld);
